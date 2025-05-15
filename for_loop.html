@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        
+
+
+    </style>
+    
+</head>
+<script>
+     function print_block(){
+        const numBoxes=parseInt(prompt("enter number what you want"))
+    for(let a = 1 ; a <= numBoxes ; a++){
+    const box = document.createElement('div');
+    box.textContent = a;
+    box.style.height = '40px';
+    box.style.width = '40px';
+    box.style.display = 'inline-block';
+    box.style.margin = '5px';
+    box.style.backgroundColor = a % 2 === 0 ? 'green' : 'red';
+    document.body.appendChild(box);
+   
+    }
+    
+
+    
+}
+</script>
+</head>
+<body>
+    <button onclick="print_block()">click</button>
+    <ul id="print">
+
+    </ul>
+   
+    
+</body>
+</html>

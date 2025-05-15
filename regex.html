@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   let regex = /hello/i; // case-insensitive match
+let result = regex.test("HELLO"); // true
+console.log(result);
+let pattern = /cat/;
+console.log(pattern.test("The Cat is here")); // true
+let results = /dog/.exec("The dog barks");
+console.log(results); // ["dog", index: 4, input: "The dog barks", ...]
+let text = "one two three";
+console.log(text.match(/\w+/g)); // ["one", "two", "three"]
+
+
+console.log("hello world".search(/world/));
+let emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+console.log(emailPattern.test("user@example.com")); // true
+
+l
+
+
+</script>
+<body>
+    
+</body>
+</html>

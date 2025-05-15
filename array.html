@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      ul{
+        list-style: none;
+      }
+      li{
+        border: solid 1px black;
+        float: left;
+        padding: 20px;
+        margin: 5px;
+      }
+    </style>
+    <script>
+         const courses=["html", "css", "js", "java", "python","ruby"];
+         console.log(courses[2])
+         function print_block(){
+         for(i=0;i<=5;i++){
+         document.getElementById("print").innerHTML += "<li>"+courses[i]+"</li>";
+         }
+        }
+    </script>
+</head>
+<body><button onclick="print_block()">click</button>
+  <ul id="print">
+
+  </ul>
+</body>
+</html>
